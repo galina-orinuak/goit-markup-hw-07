@@ -36,6 +36,12 @@
             <li class="header-link"><a href="" class="header-item link">Contacts</a></li>
           </ul>
         </nav>
+        <button type="button" class="mobile-menu-open" js-open-menu>
+          <svg class="mobile-menu-open-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-menu_icon"></use>
+            >
+          </svg>
+        </button>
         <address class="address">
           <ul class="list_adrs list">
             <li class="mail">
@@ -51,17 +57,30 @@
           </ul>
         </address>
       </div>
+
+      <div class="mobile-menu" js-menu-container>
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close-btn" js-close-menu>
+            <svg class="mobile-menu-close-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-vector"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
     </header>
 
     <main>
       <!--SECTION 1-->
+      <!--  
       <section class="section-one">
         <div class="container">
           <h1 class="main-h">Effective Solutions for Your Business</h1>
           <button class="modal-btn" type="button" data-modal-open>Order Service</button>
         </div>
       </section>
+    -->
       <!--SECTION 2-->
+      <!--  
       <section class="section-two">
         <div class="container section-two-cntr">
           <h2 hidden class="section_two_h">section 2</h2>
@@ -121,7 +140,9 @@
           </ul>
         </div>
       </section>
+      -->
       <!--SECTION 3-->
+      <!-- 
       <section class="section-three">
         <div class="container">
           <h2 class="section_three_h">What are we doing</h2>
@@ -143,7 +164,9 @@
           </ul>
         </div>
       </section>
+       -->
       <!--SECTION 4-->
+      <!--  
       <section class="section_four">
         <div class="container">
           <h2 class="section_four_h">Our Team</h2>
@@ -323,7 +346,9 @@
           </ul>
         </div>
       </section>
+      -->
       <!--SECTION 5-->
+      <!--  
       <section class="section_five">
         <div class="container section_five_cntr">
           <h2 class="section_five_h">Customers</h2>
@@ -373,8 +398,11 @@
           </ul>
         </div>
       </section>
+      -->
     </main>
+
     <footer class="footer">
+      <!-- 
       <div class="container footer_container">
         <div class="foot_logo_container">
           <a href="./index.html" class="logo logo-footer link"
@@ -431,8 +459,9 @@
           </form>
         </div>
       </div>
+       -->
     </footer>
-
+    <!-- MODAL -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
@@ -507,6 +536,7 @@
         </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+    <!-- <script src="./js/modal.js"></script> -->
   </body>
 </html>
