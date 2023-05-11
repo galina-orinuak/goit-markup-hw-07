@@ -107,10 +107,12 @@ button {
   right: 0;
   margin-top: 24px;
   margin-right: 24px;
+  background: #E7E9FC;
   opacity: 0.1;
   border-radius: 50%;
+  border: 1px solid #2E2F42;
   
-  background-color: #ffffff;
+  /*background-color: #ffffff;*/
 }
 
 .mobile-menu-close-icon{  display: inline-block;
