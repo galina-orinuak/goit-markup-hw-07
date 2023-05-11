@@ -62,13 +62,10 @@ button {
   line-height: 0;
   border: none;
   background-color: transparent;
-}
+  }
 
-.mobile-menu-open-icon {
-  stroke: #2E2F42;
+
  
-}
-
 .mobile-menu {
   position: fixed;
   width: 100%;
@@ -109,7 +106,7 @@ button {
  
 }
 
-.mobile-menu-close-icon{  stroke: #2E2F42;}
+.mobile-menu-close-icon{fill: #2E2F42;}
 
 .mobile-menu-container {
   position: relative;
