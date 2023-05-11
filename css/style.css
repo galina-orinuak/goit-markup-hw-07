@@ -58,14 +58,20 @@ button {
 }
 
 .mobile-menu-open {
-  /*
   padding: 0;
-  line-height: 0;*/
+  line-height: 0;
   border: none;
   background-color: transparent;
 }
 
-.mobile-menu-open-icon{fill: #2E2F42;}
+.mobile-menu-open-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
 
 .mobile-menu {
   position: fixed;
@@ -103,9 +109,16 @@ button {
   margin-right: 24px;
   opacity: 0.1;
   border-radius: 50%;
-  border-color: #e7e9fc;
+  
   background-color: #ffffff;
 }
+
+.mobile-menu-close-icon{  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;}
 
 .mobile-menu-container {
   position: relative;
