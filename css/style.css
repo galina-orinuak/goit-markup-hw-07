@@ -62,7 +62,9 @@ button {
   line-height: 0;
   border: none;
   background-color: transparent;
-  }
+}
+
+.mobile-menu-open-icon{stroke: currentColor;}
 
 
  
@@ -100,12 +102,12 @@ button {
   right: 0;
   margin-top: 24px;
   margin-right: 24px;
-  
+
   opacity: 0.1;
   border-radius: 50%;
+ }
  
-}
-
+ .mobile-menu-close-icon{ fill:currentColor;}
 
 .mobile-menu-container {
   position: relative;
