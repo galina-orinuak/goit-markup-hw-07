@@ -65,7 +65,7 @@ button {
   background-color: transparent;
 }
 
-.mobile-menu-close-icon{fill: #2E2F42;}
+.mobile-menu-open-icon{fill: #2E2F42;}
 
 .mobile-menu {
   position: fixed;
@@ -90,6 +90,10 @@ button {
 }
 
 .mobile-menu-close-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
   position: absolute;
   top: 0;
   right: 0;
