@@ -65,12 +65,8 @@ button {
 }
 
 .mobile-menu-open-icon {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  stroke-width: 0;
-  stroke: currentColor;
-  fill: currentColor;
+  stroke: #2E2F42;
+ 
 }
 
 .mobile-menu {
@@ -113,12 +109,7 @@ button {
  
 }
 
-.mobile-menu-close-icon{  display: inline-block;
-  width: 1em;
-  height: 1em;
-  stroke-width: 0;
-  stroke: #2E2F42;
-  fill:#2E2F42 ;}
+.mobile-menu-close-icon{  stroke: #2E2F42;}
 
 .mobile-menu-container {
   position: relative;
