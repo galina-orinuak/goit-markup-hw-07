@@ -82,15 +82,15 @@ button {
     align-items: center;
     width: 24px;
     height: 24px;
-
     position: absolute;
     top: 0;
     right: 0;
     margin-top: 24px;
     margin-right: 24px;
-
     opacity: 0.1;
     border-radius: 50%;
+    border: 1px solid #2E2F42;
+    background: #e7e9fc;
   }
 
   .mobile-menu-container {
@@ -105,19 +105,25 @@ font-size: 36px;
 line-height: 40px;
 color: #2E2F42;}
 
-.mobile-menu-address-phone{font-style: normal;
+.mobile-menu-address-phone {margin-left: 40px;
+margin-bottom: 40px;}
+
+.mobile-menu-phone-link{font-style: normal;
   font-weight: 700;
   font-size: 36px;
+  line-height: 40px;
   color: #4D5AE5;
-margin-bottom: 40px;
 }
 
-.mobile-menu-address-email{font-style: normal;
+.mobile-menu-address-email {margin-left: 40px;
+margin-bottom: 48px;}
+
+.mobile-menu-email-link{font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
  color: #434455;
- margin-bottom: 48px;
+
   }
 
   .mobile-menu-soc-link
@@ -133,6 +139,10 @@ margin-bottom: 40px;
 .mobile-menu-soc-list{display: flex;
   justify-content: center;
   gap: 56px;}
+
+  .mobile-menu-soc-icon{
+    fill: #f4f4fd;
+  }
 
 .mobile-menu-list-studio {color: #404BBF;
   padding-bottom: 40px;
@@ -570,7 +580,7 @@ margin-bottom: 40px;
 }
 
 .social_list_link_footer:hover,
-.social_list_link_footer:focus {
+.focus {
   background-color: #31d0aa;
 }
 
