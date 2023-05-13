@@ -46,7 +46,26 @@ button {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) 
+{
+  .logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
+    margin-right: 76px;
+  }
+  .second-logo {
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #2e2f42;
+  }
+
   .mobile-menu {
     position: fixed;
     width: 100%;
@@ -265,24 +284,8 @@ button {
     color: #404bbf;
   }
 
-  .logo {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #4d5ae5;
-    margin-right: 76px;
-  }
-  .second-logo {
-    font-size: 18px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #2e2f42;
-  }
- }
+ 
+}
 
 /* ------HEADER------ */
 
