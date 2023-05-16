@@ -46,6 +46,18 @@ button {
   }
 }
 
+@media screen and (min-device-pixel-ratio: 2) and (max-widhth:767px),
+screen and (min-resolution: 192dpi) and (max-widhth:767px), 
+screen and (min-resolution: 2dppx) and (max-widhth:767px){.section-one{background-image: url(../images/hero/hero_img_mobile@2x.jpg);}}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-widhth:768px),
+screen and (min-resolution: 192dpi) and (min-widhth:768px), 
+screen and (min-resolution: 2dppx) and (min-widhth:768px){.section-one{background-image: url(../images/hero/hero_img_tab@2x.jpg);}}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-widhth:1158px),
+screen and (min-resolution: 192dpi) and (min-widhth:1158px), 
+screen and (min-resolution: 2dppx) and (min-widhth:1158px){.section-one{background-image: url(../images/hero/hero_img@2x.jpg);}}
+
 /* ======================MOBILE====================== */
 
 @media screen and (min-width: 428px) {
@@ -207,12 +219,14 @@ button {
     text-align: center;
     padding-top: 112px;
     padding-bottom: 112px;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-      url('../images/hero/hero_img.jpg');
+
     background-size: cover;
     background-color: #2e2f42b2;
     max-width: 428px;
     margin: 0 auto;
+
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url('../images/hero/hero_img_mobile.jpg');
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -642,6 +656,11 @@ button {
   .section-one {
     max-width: 768px;
   }
+  .section-one {
+  
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url('../images/hero/hero_img_tab.jpg');}
+
   .main-h {
     max-width: 496px;
     margin-bottom: 36px;
@@ -740,7 +759,11 @@ row-gap: 72px;
     max-width: 1440px;
     padding-top: 188px;
     padding-bottom: 188px;
+
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url('../images/hero/hero_img.jpg');
   }
+  
   .main-h {
     margin-bottom: 48px;
   }
