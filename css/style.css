@@ -119,20 +119,22 @@ screen and (min-resolution: 2dppx) and (min-widhth:1158px){.section-one{backgrou
   }
 
   .mobile-menu-close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 24px;
     height: 24px;
-    position: absolute;
-    top: 0;
-    right: 0;
+    border-radius: 50%;
+   background-color: white;
     margin-top: 24px;
     margin-right: 24px;
+    border: 1px solid #2E2F42;
     opacity: 0.1;
-    border-radius: 50%;
-    border: 1px solid #2e2f42;
-    background: #e7e9fc;
+    
+
   }
 
   .mobile-menu-close-icon {
