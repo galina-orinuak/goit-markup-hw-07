@@ -133,7 +133,7 @@ button {
   }
   .mobile-menu-list {
     padding-top: 80px;
-    padding-bottom: 284px;
+    margin-bottom: 284px;
     margin-left: 40px;
   }
   .mobile-menu-link {
@@ -151,7 +151,7 @@ button {
     font-weight: 700;
     font-size: 36px;
     line-height: 40px;
-    color: #4d5ae5;
+    color: #434455;
   }
 
   .mobile-menu-address-email {
@@ -166,6 +166,10 @@ button {
     line-height: 24px;
     color: #434455;
   }
+  .mobile-menu-address:hover,
+  .mobile-menu-address:focus {
+    color: #404bbf;
+  } 
 
   .mobile-menu-soc-link {
     display: flex;
@@ -187,18 +191,16 @@ button {
     fill: #f4f4fd;
   }
 
-  .mobile-menu-list-studio {
-    color: #404bbf;
-    padding-bottom: 40px;
-  }
-  .mobile-menu-list-portfolio {
-    padding-bottom: 40px;
-    color: #2e2f42;
-  }
+  .mobile-menu-list {
+    color: #2e2f42;}
 
-  .mobile-menu-list-contacts {
-    color: #2e2f42;
+  .mobile-menu-list-item:not(:last-child) {
+    margin-bottom: 40px;
   }
+  .mobile-menu-link:hover,
+  .mobile-menu-link:focus {
+    color: #404bbf;
+  } 
 
   /* SECTION 1  */
   .section-one {
