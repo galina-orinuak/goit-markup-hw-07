@@ -131,8 +131,8 @@ screen and (min-resolution: 2dppx) and (min-widhth:1158px){.section-one{backgrou
    background-color: white;
     margin-top: 24px;
     margin-right: 24px;
-    border: 1px solid #2E2F42;
-    opacity: 0.1;
+    border: 1px solid #E7E9FC;;
+    /*opacity: 0.1*/;
     
 
   }
