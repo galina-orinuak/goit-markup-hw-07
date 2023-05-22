@@ -77,16 +77,25 @@ button {
     width: 100%;
     height: 100%;
     z-index: 1000;
+    overflow-y: auto;
     max-height: 796px;
     top: 0;
     left: 0;
     background-color: #fcfcfc;
     border-radius: 4px;
     opacity: 0;
+    padding: 80px 40px 40px;
     visibility: hidden;
     pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
       visability 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+    
   }
 
   .mobile-menu-open {
@@ -95,6 +104,8 @@ button {
     border: none;
     background-color: transparent;
 
+  
+
   }
 
   .mobile-menu.is-open {
@@ -102,12 +113,17 @@ button {
     visibility: visible;
     pointer-events: auto;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
+    transform: translateY(-100%);
+    animation: ani 1s forwards;
+      }
+
+    @keyframes ani{0%{translateY: (-100%);}
+    100%{transform: translateY(0);}}
 
   .mobile-menu-close-btn {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 24px;
+    right: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -115,8 +131,6 @@ button {
     height: 24px;
     border-radius: 50%;
     background-color: white;
-    margin-top: 24px;
-    margin-right: 24px;
     border: 1px solid #e7e9fc;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -124,56 +138,30 @@ button {
   .mobile-menu-close-icon {
     stroke: #2e2f42;
   }
+  
+  .mobile-menu-address-item{font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)}
+  
+  .mobile-menu-address-item:not(:last-child) {margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;}
 
-  .mobile-menu-container {
-    position: relative;
-    margin-right: 40px;
-  }
-  .mobile-menu-list {
-    padding-top: 80px;
-    margin-bottom: 284px;
-    margin-left: 40px;
-  }
+  .mobile-menu-address{margin-bottom: 48px;}
+
   .mobile-menu-link {
     font-weight: 700;
     font-size: 36px;
     line-height: 40px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
   }
-  .mobile-menu-address-phone {
-    margin-left: 40px;
-    margin-bottom: 40px;
-  }
+  .mobile-menu-address-link{color: #434455;}
 
-  .mobile-menu-phone-link {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 40px;
-    color: #434455;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
-  }
-
-  .mobile-menu-address-email {
-    margin-left: 40px;
-    margin-bottom: 48px;
-  }
-
-  .mobile-menu-email-link {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-    color: #434455;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
-  }
-  .mobile-menu-phone-link:hover,
-  .mobile-menu-phone-link:focus {
-    color: #404bbf;
-  }
-
-  .mobile-menu-email-link:hover,
-  .mobile-menu-email-link:focus {
+  .mobile-menu-address-link:hover,
+  .mobile-menu-address-link:focus {
     color: #404bbf;
   }
 
@@ -220,7 +208,6 @@ button {
 @media screen and (min-width: 320px) {
       
   .header-container {
-    width: 428px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -617,8 +604,8 @@ button {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 392px;
-    height: 584px;
+    width: calc(100%-36px);
+    max-width: 392px;
     background: #fcfcfc;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
       0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -738,9 +725,7 @@ button {
   }
 
   .modal-form-check-desc {
-    display: flex;
-    align-items: center;
-    font-size: 12px;
+   font-size: 12px;
     margin-bottom: 24px;
   }
 
@@ -751,13 +736,14 @@ button {
 
   .modal-form-check-desc::before {
     content: '';
-    display: block;
+    display: inline-block;
     width: 16px;
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     cursor: pointer;
     border-radius: 4px;
     margin-right: 8px;
+    vertical-align: middle;
   }
 
   .modal-form-check:checked + .modal-form-check-desc::before {
@@ -982,11 +968,6 @@ button {
 
   .modal {
     width: 408px;
-  }
-
-  .modal-title {
-    margin-left: 16px;
-    margin-right: 16px;
   }
 }
 
